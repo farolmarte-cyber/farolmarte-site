@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farol Marte — Site Oficial</title>
+  <meta name="description" content="Farol Marte: produtora audiovisual e design transmídia. Universo Orion, filmes, produtos e mais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --brand:#f59e0b; }
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto}
+    .mono{font-family:"IBM Plex Mono", ui-monospace, Menlo, Monaco, Consolas, "Courier New", monospace}
+    .glass{backdrop-filter:saturate(180%) blur(12px); background:rgba(10,10,10,.6)}
+    .section{scroll-margin-top:96px}
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <div class="glass border-b border-white/10">
+      <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+        <a href="#home" class="flex items-center gap-2">
+          <span class="inline-block h-7 w-7 rounded-md bg-[color:var(--brand)]"></span>
+          <span class="font-extrabold tracking-tight">Farol Marte</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#introducao" class="hover:text-[color:var(--brand)]">Introdução</a>
+          <a href="#fundador" class="hover:text-[color:var(--brand)]">Fundador</a>
+          <a href="#orion" class="hover:text-[color:var(--brand)]">Universo Orion</a>
+          <a href="#produtos" class="hover:text-[color:var(--brand)]">Produtos</a>
+          <a href="#contatos" class="hover:text-[color:var(--brand)]">Contatos</a>
+          <a href="#youtube" class="hover:text-[color:var(--brand)]">YouTube</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-white/10">☰</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden glass border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-3 text-sm">
+        <a href="#introducao" class="hover:text-[color:var(--brand)]">Introdução</a>
+        <a href="#fundador" class="hover:text-[color:var(--brand)]">Fundador</a>
+        <a href="#orion" class="hover:text-[color:var(--brand)]">Universo Orion</a>
+        <a href="#produtos" class="hover:text-[color:var(--brand)]">Produtos</a>
+        <a href="#contatos" class="hover:text-[color:var(--brand)]">Contatos</a>
+        <a href="#youtube" class="hover:text-[color:var(--brand)]">YouTube</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Home -->
+  <section id="home" class="relative min-h-[70vh] flex items-center">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1920&auto=format&fit=crop" alt="Cinema lights" class="w-full h-full object-cover opacity-50"/>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-zinc-950"></div>
+    </div>
+    <div class="relative mx-auto max-w-7xl px-4 py-28">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Farol Marte</h1>
+      <p class="mt-3 max-w-2xl text-zinc-300">Produtora audiovisual e design transmídia. Construímos universos, filmes e produtos — do roteiro ao protótipo.</p>
+      <div class="mt-8 flex gap-3 flex-wrap">
+        <a href="#contatos" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[color:var(--brand)] text-zinc-950 font-semibold">Fale com a gente</a>
+        <a href="#orion" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-white/20">Conheça o Universo Orion</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introdução -->
+  <section id="introducao" class="section py-20">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-5 gap-10 items-start">
+      <div class="md:col-span-3">
+        <h2 class="text-2xl md:text-3xl font-bold">Introdução</h2>
+        <p class="mt-4 text-zinc-300">A Farol Marte é um estúdio de criação com base em São Paulo. Atuamos em cinema, séries, conteúdo vertical, HQs e jogos, com um pipeline que inclui desenvolvimento de IP, direção, produção, pós e prototipagem (3D/props).</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-3 text-sm">
+          <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-[color:var(--brand)]"></span> Desenvolvimento de roteiros & direção</li>
+          <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-[color:var(--brand)]"></span> Branding e design de universos</li>
+          <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-[color:var(--brand)]"></span> Modelagem & impressão 3D</li>
+          <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-[color:var(--brand)]"></span> Pós e finalização</li>
+        </ul>
+      </div>
+      <aside class="md:col-span-2 p-6 rounded-2xl bg-zinc-900 border border-white/10">
+        <h3 class="font-semibold">Destaques</h3>
+        <ul class="mt-3 text-sm text-zinc-300 space-y-2">
+          <li>Curta <span class="font-medium">Sotranca</span> (20′) — produção enxuta</li>
+          <li>IP original <span class="font-medium">Orion: Histórias Depois do Fim</span></li>
+          <li>Protótipos: capacete Urutau MKII, props e mockups</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Fundador -->
+  <section id="fundador" class="section py-20 bg-zinc-900/40 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold">Fundador</h2>
+        <p class="mt-4 text-zinc-300">Peppe é criador e diretor do universo Orion. Atua como roteirista, diretor de arte e produtor, com foco em construção de mundos, estética cinematográfica e soluções criativas de baixo custo.</p>
+        <div class="mt-6 text-sm text-zinc-400 mono">São Paulo • CNPJ disponível • Orçamentos rápidos</div>
+      </div>
+      <img class="rounded-2xl shadow-2xl border border-white/10" src="https://images.unsplash.com/photo-1517467139951-f5a925c9f9de?q=80&w=1600&auto=format&fit=crop" alt="Fundador"/>
+    </div>
+  </section>
+
+  <!-- Universo Orion -->
+  <section id="orion" class="section py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Universo Orion</h2>
+
+      <!-- Filmes -->
+      <div id="filmes" class="mt-8">
+        <h3 class="text-xl font-semibold">Filmes</h3>
+        <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-5 rounded-2xl bg-zinc-900 border border-white/10">
+            <div class="text-sm text-zinc-400">Curta</div>
+            <div class="font-semibold">Sotranca — Histórias Depois do Fim</div>
+            <p class="mt-2 text-sm text-zinc-300">Suspense tático em locação única, elenco reduzido e estética de resistência urbana.</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-zinc-900 border border-white/10">
+            <div class="text-sm text-zinc-400">Série / Antologia</div>
+            <div class="font-semibold">Orion Shorts</div>
+            <p class="mt-2 text-sm text-zinc-300">Histórias independentes no mesmo universo — política, fé e identidade.</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-zinc-900 border border-white/10">
+            <div class="text-sm text-zinc-400">Longa (desenv.)</div>
+            <div class="font-semibold">Ecoado</div>
+            <p class="mt-2 text-sm text-zinc-300">O retorno do Urutau e a guerra da água em Sodoma.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curiosidades -->
+      <div id="curiosidades" class="mt-12">
+        <h3 class="text-xl font-semibold">Curiosidades</h3>
+        <ul class="mt-3 grid sm:grid-cols-2 gap-3 text-sm text-zinc-300">
+          <li>O capacete do Urutau tem nariz em <span class="mono">losango</span> — modelo MKII.</li>
+          <li>As cores dos Muros são vermelhas; do MPCE, amarelas.</li>
+          <li>O helicóptero <span class="mono">Weta</span> é referência canônica.</li>
+          <li>O moto-propulsor Peregrino usa mini reator de fusão.</li>
+        </ul>
+      </div>
+
+      <!-- Lore -->
+      <div id="lore" class="mt-12">
+        <h3 class="text-xl font-semibold">Lore</h3>
+        <div class="mt-4 grid md:grid-cols-3 gap-6">
+          <div class="p-5 rounded-2xl bg-zinc-900 border border-white/10">
+            <h4 id="personagens" class="font-semibold">Personagens</h4>
+            <ul class="mt-2 text-sm text-zinc-300 list-disc list-inside">
+              <li>Ishmael (Urutau)</li>
+              <li>Âmbar • Milca • Abrão</li>
+              <li>Caim • Asher • Eva</li>
+            </ul>
+          </div>
+          <div class="p-5 rounded-2xl bg-zinc-900 border border-white/10">
+            <h4 id="mapas" class="font-semibold">Mapas</h4>
+            <p class="mt-2 text-sm text-zinc-300">Sodoma (Zonas: Cidade Baixa, Zorotum, Altaria, Mercanto, etc.) e região de Uruca/Moraca.</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-zinc-900 border border-white/10">
+            <h4 id="faccoes" class="font-semibold">Facções</h4>
+            <p class="mt-2 text-sm text-zinc-300">Muros (resistência), MPCE (força militar), Delamax (corporação), Shekels (guilda), Matilha, etc.</p>
+            <p class="mt-2 text-xs text-zinc-400">Obs.: Assumi "Facções"; se preferir literalmente "facões", troco em um clique.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="section py-20 bg-zinc-900/40 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Produtos</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-white/10">
+          <h3 class="font-semibold">Livro • Orion #1</h3>
+          <p class="mt-2 text-sm text-zinc-300">História de origem do Urutau com artes e lore canônico.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-white/10">
+          <h3 class="font-semibold">HQs • APODE</h3>
+          <p class="mt-2 text-sm text-zinc-300">Edição 16:9 com estética de pôster vintage.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-white/10">
+          <h3 class="font-semibold">Colecionáveis</h3>
+          <p class="mt-2 text-sm text-zinc-300">Capacete Urutau MKII e props em 3D.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contatos -->
+  <section id="contatos" class="section py-20">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold">Contatos</h2>
+        <p class="mt-4 text-zinc-300">Atendemos Brasil e exterior. Envie uma mensagem com o tipo de projeto, prazo e referências.</p>
+        <div class="mt-6 grid sm:grid-cols-2 gap-3">
+          <a class="block text-center px-5 py-3 rounded-xl bg-[color:var(--brand)] text-zinc-950 font-semibold" href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="block text-center px-5 py-3 rounded-xl border border-white/20" href="mailto:contato@farolmarte.com" target="_blank" rel="noopener">contato@farolmarte.com</a>
+        </div>
+        <div class="mt-6 text-sm text-zinc-400">
+          <div>CNPJ 00.000.000/0001-00 • São Paulo — SP</div>
+          <div class="mono">Instagram @farolmarte • YouTube /farolmarte</div>
+        </div>
+      </div>
+      <form class="p-6 rounded-2xl bg-zinc-900 border border-white/10 grid gap-4">
+        <div class="grid gap-1">
+          <label class="text-sm">Nome</label>
+          <input name="nome" class="px-4 py-3 rounded-xl bg-black/40 border border-white/10 outline-none focus:border-[color:var(--brand)]" placeholder="Seu nome"/>
+        </div>
+        <div class="grid gap-1">
+          <label class="text-sm">E‑mail</label>
+          <input name="email" class="px-4 py-3 rounded-xl bg-black/40 border border-white/10 outline-none focus:border-[color:var(--brand)]" placeholder="voce@email.com"/>
+        </div>
+        <div class="grid gap-1">
+          <label class="text-sm">Mensagem</label>
+          <textarea name="mensagem" rows="4" class="px-4 py-3 rounded-xl bg-black/40 border border-white/10 outline-none focus:border-[color:var(--brand)]" placeholder="Conte sobre seu projeto"></textarea>
+        </div>
+        <button type="button" class="px-5 py-3 rounded-xl bg-white text-black font-semibold">Enviar (coming soon)</button>
+        <p class="text-xs text-zinc-400">Dica: para formulário real, conecte via Formspree, Basin ou Netlify Forms.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- YouTube -->
+  <section id="youtube" class="section py-20 bg-zinc-900/40 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">YouTube</h2>
+      <p class="mt-3 text-zinc-300">Últimos vídeos e bastidores. Substitua os IDs pelos do seu canal.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="aspect-video rounded-2xl overflow-hidden border border-white/10 bg-black">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="aspect-video rounded-2xl overflow-hidden border border-white/10 bg-black">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/oHg5SJYRHA0" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="aspect-video rounded-2xl overflow-hidden border border-white/10 bg-black">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/3GwjfUFyY6M" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <a href="https://youtube.com" target="_blank" rel="noopener" class="inline-block mt-6 px-5 py-3 rounded-xl border border-white/20">Ir para o canal</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-zinc-400">
+      <div>© <span id="year"></span> Farol Marte. Todos os direitos reservados.</div>
+      <div class="mono">Feito com ♥ • Site estático</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', ()=> menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
